@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Barra superior */
+.top-bar {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 13px;
+}
+
+/* HEADER */
+.header {
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    color: white;
+    z-index: 10;
+}
+
+/* FILA SUPERIOR */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    position: relative;
+}
+
+/* BUSCADOR */
+.left input {
+    padding: 5px;
+}
+
+/* LOGO CENTRADO (YA NO SE TAPA) */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* ICONOS */
+.icons {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+}
+
+/* MENÚ ABAJO */
+.menu {
+    margin-top: 20px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* HERO (IMAGEN MÁS ADECUADA) */
+.hero {
+    height: 100vh;
+    background: url("img/imagen_1.jpg") center/cover no-repeat;
+    position: relative;
+}
+
+/* OSCURECER IMAGEN */
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+/* TEXTO ENCIMA */
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+/* BOTONES */
+.buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background: white;
+    color: black;
+}
+
+/* WHATSAPP FLOTANTE */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 50%;
+    text-align: center;
+}
+/* BUSCADOR CON LUPA */
+.search-box {
+    position: relative;
+}
+
+.search-box i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+}
+
+.search-box input {
+    padding: 6px 10px 6px 30px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
